@@ -1,0 +1,121 @@
+<div class="row bottom-30">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <span>Draggable elements around in the same container</span>       
+            </div>
+            <div class="card-body">
+               <p>Ng2 Dragula - Drag and drop so simple it hurts. Built with <a href="https://github.com/valor-software/ng2-dragula" target="_blank">ng2-dragula</a></p>
+             
+                <div class="row mbm-20" [dragula]="'bag-container'">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bottom-30 draggable">              
+                        <div class="card">
+                            <div class="card-header">
+                                Drag me
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">There's also the possibility of moving elements around in the same container, changing their position.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bottom-30 draggable">       
+                        <div class="card card-primary text-white">
+                            <div class="card-header">
+                               Drag me
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">There's also the possibility of moving elements around in the same container, changing their position.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bottom-30 draggable">       
+                        <div class="card card-success text-white">
+                            <div class="card-header">
+                                Drag me
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">There's also the possibility of moving elements around in the same container, changing their position.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bottom-30 draggable">              
+                        <div class="card card-info text-white">
+                            <div class="card-header">
+                                Drag me
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">There's also the possibility of moving elements around in the same container, changing their position.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bottom-30 draggable">              
+                        <div class="card card-warning text-white">
+                            <div class="card-header">
+                               Drag me
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">There's also the possibility of moving elements around in the same container, changing their position.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 bottom-30 draggable">              
+                        <div class="card card-danger text-white">
+                            <div class="card-header">
+                                Drag me
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">There's also the possibility of moving elements around in the same container, changing their position.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row text-center">
+    <div class="col-6"  [dragula]="'bag-1'">
+        <h4>First Container</h4>
+        <div class="card card-success draggable">
+            <div class="card-body">
+                <h4 class="card-title">Move me!</h4>
+                <p class="card-text">You can move these elements between these two containers.</p>
+            </div>
+        </div>
+        <div class="card card-primary draggable">
+            <div class="card-body">
+                <h4 class="card-title">Move me!</h4>
+                <p class="card-text">You can move these elements between these two containers.</p>
+            </div>
+        </div>
+        <div class="card card-danger draggable">
+            <div class="card-body">
+                <h4 class="card-title">Move me!</h4>
+                <p class="card-text">You can move these elements between these two containers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-6"  [dragula]="'bag-1'">
+       <h4>Second Container</h4>
+       <div class="card card-warning draggable">
+          <div class="card-body">
+              <h4 class="card-title">Move me!</h4>
+              <p class="card-text">You can move these elements between these two containers.</p>
+          </div>
+      </div>
+      <div class="card card-info draggable">
+          <div class="card-body">
+              <h4 class="card-title">Move me!</h4>
+              <p class="card-text">You can move these elements between these two containers.</p>
+          </div>
+      </div>
+      <div class="card card-success draggable">
+          <div class="card-body">
+              <h4 class="card-title">Move me!</h4>
+              <p class="card-text">You can move these elements between these two containers.</p>
+          </div>
+      </div>
+    </div>
+</div>

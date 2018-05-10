@@ -1,0 +1,89 @@
+<div class="row">
+    <div class="col">
+        <div widget class="card">
+            <div class="card-header">
+                <span class="text-uppercase">Ngx datatable</span>
+                <div class="widget-controls"> 
+                    <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
+                    <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
+                    <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>                          
+                    <a data-widgster="close" href="#" class="transition"><i class="fa fa-times"></i></a>
+                </div>        
+            </div>
+            <div class="card-body widget-body">
+                <p class="no-margin">Ngx datatable - Editable, filterable and sortable table made with <a href="https://github.com/swimlane/ngx-datatable" target="_blank" class="font-weight-bold transition">ngx-datatable</a>.</p>
+               
+                <div class="input-group input-group-sm my-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Search name..." (keyup)="updateFilter($event)"/>
+                </div>
+
+                <ngx-datatable
+                    #table
+                    class="bootstrap"
+                    [headerHeight]="50"
+                    [limit]="10"
+                    [columnMode]="'force'"
+                    [footerHeight]="50"
+                    [rowHeight]="'auto'"
+                    [rows]="rows"
+                    [selected]="selected"
+                    [selectionType]="'checkbox'"
+                    (activate)="onActivate($event)"
+                    (select)='onSelect($event)'>
+                    <ngx-datatable-column
+                        [width]="30"
+                        [sortable]="false"
+                        [canAutoResize]="false"
+                        [draggable]="true"
+                        [resizeable]="false"
+                        [headerCheckboxable]="true"
+                        [checkboxable]="true">
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="Name">
+                        <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-value="value" let-row="row">
+                            <span
+                            title="Double click to edit"
+                            (dblclick)="editing[rowIndex + '-name'] = true"
+                            *ngIf="!editing[rowIndex + '-name']">
+                            {{value}}
+                            </span>
+                            <input
+                            autofocus
+                            (blur)="updateValue($event, 'name', rowIndex)"
+                            *ngIf="editing[rowIndex+ '-name']"
+                            type="text"
+                            [value]="value"
+                            />
+                        </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="Gender">
+                        <ng-template ngx-datatable-cell-template let-rowIndex="rowIndex" let-row="row" let-value="value">
+                            <span
+                            title="Double click to edit"
+                            (dblclick)="editing[rowIndex + '-gender'] = true"
+                            *ngIf="!editing[rowIndex + '-gender']">
+                            {{value}}
+                            </span>
+                            <select
+                            *ngIf="editing[rowIndex + '-gender']"
+                            (change)="updateValue($event, 'gender', rowIndex)"
+                            [value]="value">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            </select>
+                        </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="Company">
+                        <ng-template ngx-datatable-cell-template let-value="value">
+                            {{value}}
+                        </ng-template>
+                    </ngx-datatable-column>
+                </ngx-datatable>  
+            </div>
+        </div>
+    </div>
+</div>

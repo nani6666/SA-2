@@ -19,6 +19,7 @@ import { MessagesComponent } from '../theme/components/messages/messages.compone
 import { BreadcrumbComponent } from '../theme/components/breadcrumb/breadcrumb.component';
 import { BackTopComponent } from '../theme/components/back-top/back-top.component';
 import { SearchComponent } from './search/search.component';
+import { SellerComponent } from './project/seller/seller.component';
 
 
 
@@ -40,7 +41,8 @@ import { SearchComponent } from './search/search.component';
     MessagesComponent,
     BreadcrumbComponent,
     BackTopComponent,
-    SearchComponent 
+    SearchComponent,
+    SellerComponent 
   ],
   providers:[
     {

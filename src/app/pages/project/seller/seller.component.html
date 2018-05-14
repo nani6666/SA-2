@@ -2,45 +2,92 @@
   <div class="col-xl-6 col-lg-6 col-12 bottom-30">
     <div widget class="card">
         <div class="card-header">
-            <span>HORIZONTAL FORM</span>
-            <div class="widget-controls">              
-                <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
-                <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
-                <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
-                <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>                          
-                <a data-widgster="close" href="#" class="transition"><i class="fa fa-times"></i></a>
+            <span><i class="fa fa-info-circle"></i>  Company Informantion</span> 
+            <div class="widget-controls">    
+                <a><i class="fa fa-exclamation-triangle text-danger" aria-hidden="true"></i></a>          
+                <a data-widgster="expand"  class="transition"><i class="fa fa-chevron-down"></i></a>
+                <a data-widgster="collapse"  class="transition"><i class="fa fa-chevron-up"></i></a>
+                <a data-widgster="fullscreen"  class="transition"><i class="fa fa-expand"></i></a>
+                <a data-widgster="restore"  class="transition"><i class="fa fa-compress"></i></a>                          
+                <a data-widgster="close"  class="transition"><i class="fa fa-times"></i></a>
+
             </div>        
         </div>
         <div class="card-body widget-body">
-
-            <h6 class="card-title text-center">To enjoy more, sing in!</h6>
-
             <form class="form-horizontal">
                 <div class="form-group row text-sm-right">
-                    <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Email</label>
+                    <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Name</label>
                     <div class="col-sm-9">
-                        <input type="email" class="form-control" id="email-h-t">
+                        <input type="text" class="form-control" >
                     </div>
                 </div>
                 <div class="form-group row text-sm-right">
-                    <label for="password-h-f" class="col-sm-3 form-control-label m-t-5">Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" class="form-control" id="password-h-f">
-                    </div>
+                        <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Description</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" ></textarea>
+                        </div>
                 </div>
                 <div class="form-group row text-sm-right">
-                    <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Re Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" class="form-control" id="re-password-h-f">
+                    <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Contact Person</label>
+                    <div class="col-sm-4"><input type="text" class="form-control" ></div>
+                    <div class="col-sm-5"><input type="text" class="form-control" ></div>                 
+                </div>
+                <div class="form-group row text-sm-right">
+                        <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Location</label>
+                        <div class="col-sm-9">
+                                <select class="form-control">
+                                        <option>Choose Location</option>
+                                        <option>USA</option>
+                                        <option>South Africa</option>
+                                        <option>India</option>
+                                        
+                                    </select>
+                        </div>
+                </div>
+                <div class="form-group row text-sm-right">
+                        <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Landline Number</label>
+                        <div class="col-sm-2"><input type="text" class="form-control" placeholder="+91" ></div>
+                        <div class="col-sm-7"><input type="text" class="form-control" ></div>                 
                     </div>
+                <div class="form-group row text-sm-right">
+                        <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Language</label>
+                        <div class="col-sm-9">
+                                <select class="form-control">
+                                        <option>Choose Language</option>
+                                        <option>English</option>
+                                        <option>Spanish</option>
+                                        <option>German</option> 
+                                    </select>
+                        </div>
+                </div>
+                <div class="form-group row text-sm-right">
+                        <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Website</label>
+                        <div class="col-sm-9">
+                                <input type="text" class="form-control" > 
+                        </div>
+                </div>
+                <div class="form-group row text-sm-right">
+                        <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Currency</label>
+                        <div class="col-sm-9">
+                                <select class="form-control">
+                                        <option value="">Choose Currency</option>
+                                        <option value="USD">USD</option>
+                                        <option value="INR">INR</option>
+                                        <option value="EUR">EUR</option> 
+                                        <option value="GBP">GBP</option> 
+                                        <option value="AUD">AUD</option> 
+                                        <option value="NZD">NZD</option> 
+                                        <option value="ZAR">ZAR</option> 
+                                        <option value="JPY">JPY</option> 
+                                    </select>
+                        </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-9 ml-sm-auto d-flex justify-content-between">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input checkbox-main" id="checkbox-h-f" checked>
-                            <label class="custom-control-label" for="checkbox-h-f">Keep me signed in</label>
+                        <div style="text-align: center;">
+                                <button class="btn btn-info btn-sm " type="button">Save</button> 
+                                <button class="btn btn-default btn-sm" type="button">Cancel</button> 
                         </div>
-                        <button class="btn btn-main pull-right" type="submit">Sign in</button>
                     </div>
                 </div>
             </form>
@@ -53,45 +100,40 @@
   <div class="col-xl-6 col-lg-6 col-12 bottom-30">
       <div widget class="card">
           <div class="card-header">
-              <span>HORIZONTAL FORM</span>
-              <div class="widget-controls">              
-                  <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
-                  <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
-                  <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
-                  <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>                          
-                  <a data-widgster="close" href="#" class="transition"><i class="fa fa-times"></i></a>
+            <span><i class="fa fa-eye"></i>  Company Logo</span>
+              <div class="widget-controls"> 
+                    <a><i class="fa fa-exclamation-triangle text-danger" aria-hidden="true"></i></a>             
+                  <a data-widgster="expand"  class="transition"><i class="fa fa-chevron-down"></i></a>
+                  <a data-widgster="collapse"  class="transition"><i class="fa fa-chevron-up"></i></a>
+                  <a data-widgster="fullscreen"  class="transition"><i class="fa fa-expand"></i></a>
+                  <a data-widgster="restore"  class="transition"><i class="fa fa-compress"></i></a>                          
+                  <a data-widgster="close"  class="transition"><i class="fa fa-times"></i></a>
               </div>        
           </div>
           <div class="card-body widget-body">
 
-              <h6 class="card-title text-center">To enjoy more, sing in!</h6>
+              
 
               <form class="form-horizontal">
-                  <div class="form-group row text-sm-right">
-                      <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Email</label>
-                      <div class="col-sm-9">
-                          <input type="email" class="form-control" id="email-h-t">
-                      </div>
-                  </div>
-                  <div class="form-group row text-sm-right">
-                      <label for="password-h-f" class="col-sm-3 form-control-label m-t-5">Password</label>
-                      <div class="col-sm-9">
-                          <input type="password" class="form-control" id="password-h-f">
-                      </div>
-                  </div>
-                  <div class="form-group row text-sm-right">
-                      <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Re Password</label>
-                      <div class="col-sm-9">
-                          <input type="password" class="form-control" id="re-password-h-f">
-                      </div>
-                  </div>
+                    
+
+                    <div class="image-wrapper">
+                        <i *ngIf="image" class="fa fa-times delete-img" (click)="removeImage()"></i>
+                        <img [attr.src]="image" *ngIf="image" width="100%">
+                        <img src="assets/img/app/no-image.png" *ngIf="!image" width="100%">
+                    </div>
+                    <input type="file" (change)="fileChange(input)" #input class="img-upload-btn"/>
+                    <button class="btn btn-main btn-block" type="button">
+                            <span *ngIf="!image"><i class="fa fa-upload"></i> Select Image... </span>
+                            <span *ngIf="image"><i class="fa fa-refresh"></i> Change Image... </span>
+                       </button>
+                    
                   <div class="form-group row">
                       <div class="col-sm-9 ml-sm-auto d-flex justify-content-between">
-                          <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input checkbox-main" id="checkbox-h-f" checked>
-                              <label class="custom-control-label" for="checkbox-h-f">Keep me signed in</label>
-                          </div>
-                          <button class="btn btn-main pull-right" type="submit">Sign in</button>
+                            <div style="text-align: center;padding-top: 30px;">
+                                    <button class="btn btn-info btn-sm " type="button">Save</button> 
+                                    <button class="btn btn-default btn-sm" type="button">Cancel</button> 
+                            </div>
                       </div>
                   </div>
               </form>
@@ -107,45 +149,46 @@
   <div class="col-xl-6 col-lg-6 col-12 bottom-30">
     <div widget class="card">
         <div class="card-header">
-            <span>HORIZONTAL FORM</span>
-            <div class="widget-controls">              
-                <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
-                <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
-                <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
-                <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>                          
-                <a data-widgster="close" href="#" class="transition"><i class="fa fa-times"></i></a>
+            <span><i class="fa fa-phone"></i>  Company Contact Informantion</span>
+            <div class="widget-controls"> 
+                <a><i class="fa fa-exclamation-triangle text-danger" aria-hidden="true"></i></a>             
+                <a data-widgster="expand"  class="transition"><i class="fa fa-chevron-down"></i></a>
+                <a data-widgster="collapse"  class="transition"><i class="fa fa-chevron-up"></i></a>
+                <a data-widgster="fullscreen"  class="transition"><i class="fa fa-expand"></i></a>
+                <a data-widgster="restore"  class="transition"><i class="fa fa-compress"></i></a>                          
+                <a data-widgster="close"  class="transition"><i class="fa fa-times"></i></a>
             </div>        
         </div>
         <div class="card-body widget-body">
 
-            <h6 class="card-title text-center">To enjoy more, sing in!</h6>
-
             <form class="form-horizontal">
-                <div class="form-group row text-sm-right">
-                    <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Email</label>
-                    <div class="col-sm-9">
-                        <input type="email" class="form-control" id="email-h-t">
+                <div class="form-group">
+                        <label class="control-label">Email</label>
+                <div class="input-group mb-3">                    
+                    <input type="text" class="form-control" placeholder="">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-info">Verify</button>
                     </div>
                 </div>
-                <div class="form-group row text-sm-right">
-                    <label for="password-h-f" class="col-sm-3 form-control-label m-t-5">Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" class="form-control" id="password-h-f">
+               </div>
+                <div class="form-group">
+                        <label class="control-label">Phone</label>
+                <div class="input-group mb-3"> 
+                    <div class="input-group-prepend">
+                        <input style="width:95px" class="" type="text" class="form-control" placeholder="+91"/>
+                    </div>                   
+                    <input type="text" class="form-control" placeholder="">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-info">Verify</button>
                     </div>
                 </div>
-                <div class="form-group row text-sm-right">
-                    <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Re Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" class="form-control" id="re-password-h-f">
-                    </div>
-                </div>
+            </div>
                 <div class="form-group row">
                     <div class="col-sm-9 ml-sm-auto d-flex justify-content-between">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input checkbox-main" id="checkbox-h-f" checked>
-                            <label class="custom-control-label" for="checkbox-h-f">Keep me signed in</label>
-                        </div>
-                        <button class="btn btn-main pull-right" type="submit">Sign in</button>
+                            <div style="text-align: center;">
+                                    <button class="btn btn-info btn-sm " type="button">Save</button> 
+                                    <button class="btn btn-default btn-sm" type="button">Cancel</button> 
+                            </div>
                     </div>
                 </div>
             </form>
@@ -157,45 +200,119 @@
 <div class="col-xl-6 col-lg-6 col-12 bottom-30">
   <div widget class="card">
       <div class="card-header">
-          <span>HORIZONTAL FORM</span>
-          <div class="widget-controls">              
-              <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
-              <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
-              <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
-              <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>                          
-              <a data-widgster="close" href="#" class="transition"><i class="fa fa-times"></i></a>
+        <span><i class="fa fa-map-marker"></i>  Address Details</span>
+          <div class="widget-controls">  
+              <a><i class="fa fa-exclamation-triangle text-danger" aria-hidden="true"></i></a>            
+              <a data-widgster="expand"  class="transition"><i class="fa fa-chevron-down"></i></a>
+              <a data-widgster="collapse"  class="transition"><i class="fa fa-chevron-up"></i></a>
+              <a data-widgster="fullscreen"  class="transition"><i class="fa fa-expand"></i></a>
+              <a data-widgster="restore"  class="transition"><i class="fa fa-compress"></i></a>                          
+              <a data-widgster="close"  class="transition"><i class="fa fa-times"></i></a>
           </div>        
       </div>
       <div class="card-body widget-body">
-
-          <h6 class="card-title text-center">To enjoy more, sing in!</h6>
-
+            
           <form class="form-horizontal">
+                <h6 class="card-title text-left">Business Loaction Address</h6>
               <div class="form-group row text-sm-right">
-                  <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Email</label>
+                  <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Address Line 1</label>
                   <div class="col-sm-9">
-                      <input type="email" class="form-control" id="email-h-t">
+                      <input type="text" class="form-control" >
                   </div>
               </div>
               <div class="form-group row text-sm-right">
-                  <label for="password-h-f" class="col-sm-3 form-control-label m-t-5">Password</label>
+                  <label for="password-h-f" class="col-sm-3 form-control-label m-t-5">Address Line 2</label>
                   <div class="col-sm-9">
-                      <input type="password" class="form-control" id="password-h-f">
+                      <input type="text" class="form-control" >
                   </div>
               </div>
               <div class="form-group row text-sm-right">
-                  <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Re Password</label>
+                  <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">City</label>
                   <div class="col-sm-9">
-                      <input type="password" class="form-control" id="re-password-h-f">
+                      <input type="text" class="form-control">
                   </div>
               </div>
+              <div class="form-group row text-sm-right">
+                    <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">State</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row text-sm-right">
+                        <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Country</label>
+                        <div class="col-sm-9">
+                           <select class="form-control">
+                               <option>Choose Country</option>
+                               <option>USA</option>
+                               <option>South Africa</option>
+                               <option>India</option>
+                               
+                           </select>
+                        </div>
+                    </div>
+                    <div class="form-group row text-sm-right">
+                            <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Postal Code</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+              <div class="form-group row">
+                    <div class="col-sm-9 ml-sm-auto d-flex justify-content-between">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input checkbox-main" id="checkbox-h-f" >
+                            <label class="custom-control-label" for="checkbox-h-f">Same As Business Location Address</label>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="card-title text-left">Post Box Address</h6>
+                <div class="form-group row text-sm-right">
+                        <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Address Line 1</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="form-group row text-sm-right">
+                        <label for="password-h-f" class="col-sm-3 form-control-label m-t-5">Address Line 2</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="form-group row text-sm-right">
+                        <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">City</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row text-sm-right">
+                          <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">State</label>
+                          <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                          </div>
+                      </div>
+                      <div class="form-group row text-sm-right">
+                              <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Country</label>
+                              <div class="col-sm-9">
+                                 <select class="form-control">
+                                     <option>Choose Country</option>
+                                     <option>USA</option>
+                                     <option>South Africa</option>
+                                     <option>India</option>
+                                     
+                                 </select>
+                              </div>
+                          </div>
+                          <div class="form-group row text-sm-right">
+                                  <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Postal Code</label>
+                                  <div class="col-sm-9">
+                                      <input type="text" class="form-control">
+                                  </div>
+                              </div>
               <div class="form-group row">
                   <div class="col-sm-9 ml-sm-auto d-flex justify-content-between">
-                      <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input checkbox-main" id="checkbox-h-f" checked>
-                          <label class="custom-control-label" for="checkbox-h-f">Keep me signed in</label>
-                      </div>
-                      <button class="btn btn-main pull-right" type="submit">Sign in</button>
+                        <div style="text-align: center;">
+                                <button class="btn btn-info btn-sm " type="button">Save</button> 
+                                <button class="btn btn-default btn-sm" type="button">Cancel</button> 
+                        </div>
                   </div>
               </div>
           </form>
@@ -210,45 +327,48 @@
   <div class="col-xl-6 col-lg-6 col-12 bottom-30">
     <div widget class="card collapsed">
         <div class="card-header">
-            <span>HORIZONTAL FORM</span>
-            <div class="widget-controls">              
-                <a data-widgster="expand" href="#" class="transition"><i class="fa fa-chevron-down"></i></a>
-                <a data-widgster="collapse" href="#" class="transition"><i class="fa fa-chevron-up"></i></a>
-                <a data-widgster="fullscreen" href="#" class="transition"><i class="fa fa-expand"></i></a>
-                <a data-widgster="restore" href="#" class="transition"><i class="fa fa-compress"></i></a>                          
-                <a data-widgster="close" href="#" class="transition"><i class="fa fa-times"></i></a>
+            <span><i class="fa fa-globe"></i>  Company social media Information</span>
+            <div class="widget-controls">
+                <a><i class="fa fa-exclamation-triangle text-danger" aria-hidden="true"></i></a>              
+                <a data-widgster="expand"  class="transition"><i class="fa fa-chevron-down"></i></a>
+                <a data-widgster="collapse"  class="transition"><i class="fa fa-chevron-up"></i></a>
+                <a data-widgster="fullscreen"  class="transition"><i class="fa fa-expand"></i></a>
+                <a data-widgster="restore"  class="transition"><i class="fa fa-compress"></i></a>                          
+                <a data-widgster="close"  class="transition"><i class="fa fa-times"></i></a>
             </div>        
         </div>
         <div class="card-body widget-body">
-
-            <h6 class="card-title text-center">To enjoy more, sing in!</h6>
-
             <form class="form-horizontal">
                 <div class="form-group row text-sm-right">
-                    <label for="email-h-f" class="col-sm-3 form-control-label m-t-5">Email</label>
+                    <label for="facebook" class="col-sm-3 form-control-label m-t-5">Facebook</label>
                     <div class="col-sm-9">
-                        <input type="email" class="form-control" id="email-h-t">
+                        <input type="text" class="form-control" id="facebook">
                     </div>
                 </div>
                 <div class="form-group row text-sm-right">
-                    <label for="password-h-f" class="col-sm-3 form-control-label m-t-5">Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" class="form-control" id="password-h-f">
-                    </div>
+                        <label for="twitter" class="col-sm-3 form-control-label m-t-5">Twitter</label>
+                   <div class="col-sm-9">
+                            <input type="text" class="form-control" id="twitter">
+                   </div>
                 </div>
                 <div class="form-group row text-sm-right">
-                    <label for="re-password-h-f" class="col-sm-3 form-control-label m-t-5">Re Password</label>
-                    <div class="col-sm-9">
-                        <input type="password" class="form-control" id="re-password-h-f">
-                    </div>
+                            <label for="youtube" class="col-sm-3 form-control-label m-t-5">YouTube</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="youtube">
+                            </div>
+                </div>
+                <div class="form-group row text-sm-right">
+                        <label for="LinkedIn" class="col-sm-3 form-control-label m-t-5">LinkedIn</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="linkedin">
+                        </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-9 ml-sm-auto d-flex justify-content-between">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input checkbox-main" id="checkbox-h-f" checked>
-                            <label class="custom-control-label" for="checkbox-h-f">Keep me signed in</label>
-                        </div>
-                        <button class="btn btn-main pull-right" type="submit">Sign in</button>
+                            <div style="text-align: center;">
+                                    <button class="btn btn-info btn-sm " type="button">Save</button> 
+                                    <button class="btn btn-default btn-sm" type="button">Cancel</button> 
+                            </div>
                     </div>
                 </div>
             </form>
@@ -257,4 +377,113 @@
     </div>
 </div>
 
+</div>
+<div class="row bottom-30">
+    <div class="col">
+        <div widget class="card">
+            <div class="card-header">
+                <span><i class="fa fa-copy"></i>  Company Registration Details</span>
+                <div class="widget-controls"> 
+                    <a><i class="fa fa-exclamation-triangle text-danger" aria-hidden="true"></i></a>             
+                    <a data-widgster="expand"  class="transition"><i class="fa fa-chevron-down"></i></a>
+                    <a data-widgster="collapse"  class="transition"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widgster="fullscreen"  class="transition"><i class="fa fa-expand"></i></a>
+                    <a data-widgster="restore"  class="transition"><i class="fa fa-compress"></i></a>                          
+                    <a data-widgster="close"  class="transition"><i class="fa fa-times"></i></a>
+                </div>        
+            </div>
+            <div class="card-body widget-body">
+
+                <form class="">
+                   <div class="row">
+                       <div class="col-md-8">
+                            <div class="form-group row text-sm-right">
+                               <label for="regno" class="col-sm-3 form-control-label m-t-5">Registration No.</label>
+                                <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="regno">
+                                        
+                                </div>
+                                <div class="col-sm-2">
+                                        <button class="btn  btn-info">Save</button>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="col-md-4">
+                          <h1></h1>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <div class="col-md-8"> 
+                            <div class="form-group row text-sm-right">
+                                    <label for="img" class="col-sm-3 form-control-label m-t-5">Upload Documents .</label>
+                                     <div class="col-sm-7">
+                                             <input type="text" class="form-control" id="regno">
+                                             
+                                     </div>
+                                     <div class="col-sm-2">
+                                             <button class="btn  btn-info">Save</button>
+                                     </div>
+                            </div>
+                    </div>
+                   </div>
+                     
+                </form>    
+                <div class="form-group col-md-3 col-sm-6" style="text-align: center;padding-top:30px;padding-left:150px;">
+                        <div>
+                                <!-- <button class="btn btn-info btn-sm " type="button">Save</button>  -->
+                                <button class="btn btn-default btn-sm" type="button">Cancel</button> 
+                        </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row bottom-30">
+    <div class="col">
+        <div widget class="card">
+            <div class="card-header">
+                <span><i class="fa fa-briefcase"></i>  Business Types</span>
+                <div class="widget-controls">  
+                    <a><i class="fa fa-exclamation-triangle text-danger" aria-hidden="true"></i></a>            
+                    <a data-widgster="expand"  class="transition"><i class="fa fa-chevron-down"></i></a>
+                    <a data-widgster="collapse"  class="transition"><i class="fa fa-chevron-up"></i></a>
+                    <a data-widgster="fullscreen"  class="transition"><i class="fa fa-expand"></i></a>
+                    <a data-widgster="restore"  class="transition"><i class="fa fa-compress"></i></a>                          
+                    <a data-widgster="close"  class="transition"><i class="fa fa-times"></i></a>
+                </div>        
+            </div>
+            <div class="card-body widget-body">
+
+                <form class="row form-inline">
+                    <div class="col-md-3">
+                           <div  class="card">
+                            <div class="card-header" style="background-color: #000;">
+                                <h6>Sectors</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Under Construction</p>
+                                </div>
+                                </div>
+                    </div>
+                    <div class="col-md-9">
+                            <div  class="card" >
+                                    <div class="card-header" style="background-color: #000;">
+                                        <h6>Industries</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Under Construction</p>
+                                        </div>
+                                        </div>
+                        </div>
+                    
+                </form>  
+                <div class="form-group" style="text-align: center;padding-top:30px;">
+                        <div >
+                                <button class="btn btn-info btn-sm " type="button">Save</button> 
+                                <button class="btn btn-default btn-sm" type="button">Cancel</button> 
+                        </div>
+                    </div>           
+            </div>
+        </div>
+    </div>
 </div>

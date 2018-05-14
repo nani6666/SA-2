@@ -1,0 +1,49 @@
+
+.image-preview-input {
+    position: relative;
+	overflow: hidden;
+	margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+.img-upload-btn{
+    position: absolute;
+    padding: 0;
+    width: calc(100% - 30px);
+    height: 38px;
+    opacity: 0;
+}
+
+.image-wrapper{
+    position: relative;
+    .delete-img{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 3px 5px;
+        border-radius: 50%;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    &:hover .delete-img{
+        visibility: visible;
+    }
+}
+

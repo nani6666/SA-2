@@ -11,7 +11,7 @@ export class AppConfig {
    constructor(){
         this.sassVariables = this.getSassVariables();
         this.config = {
-            name: 'Azimuth',
+            name: 'Seller',
             title: 'Admin template based on Angular 5 and Bootstrap 4',
             version: '2.2.0',
             colors:{

@@ -23,7 +23,7 @@ export const routes: Routes = [
             { path: 'editors', loadChildren: 'app/pages/editors/editors.module#EditorsModule', data: { breadcrumb: 'Editors' } },
             { path: 'search', component: SearchComponent, data: { breadcrumb: 'Search' } },
             { path: 'blank', component: BlankComponent, data: { breadcrumb: 'Blank page' } },
-            { path: 'seller', component: SellerComponent, data: { breadcrumb: 'Seller page' } },
+            { path: 'seller', component: SellerComponent, data: { breadcrumb: 'My Profile' } },
         ]
     }
 ];
